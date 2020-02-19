@@ -1,0 +1,12 @@
+package com.lti.web.hr.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HrController {
+	
+	public String getHomePage() {
+		return "/WEB-INF/jsps/Home.jsp";
+	}
+
+}

@@ -1,0 +1,48 @@
+package com.lnt.appl;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+
+@Component("dao1")
+@Scope("singleton")
+public class EmpDaoImpl implements EmpDao,InitializingBean {
+	
+	private String companyName;
+	
+	public EmpDaoImpl() {
+		System.out.println("object EmpDaoImpl created here.");
+	}
+	
+	
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	@Value("Larson and Turbo Information")
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+
+	public ArrayList<String> getEmpList(){
+		
+		ArrayList<String> empList=new ArrayList<>();
+		empList.add("Rohan");
+		empList.add("Ravan");
+		
+		return empList;
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		
+		
+		
+	}
+
+}

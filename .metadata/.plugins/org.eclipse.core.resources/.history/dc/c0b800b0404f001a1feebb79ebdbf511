@@ -1,0 +1,31 @@
+package com.lti.finance.core.entities;
+
+public class User {
+	
+	private int userId;
+	private String userName;
+	private String password;
+	private String mobileNumber;
+	private String email;
+	private String aadharCardNumber;
+	private String panCardNumber;
+	private String address;
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	public User(int userId, String userName, String password, String mobileNumber, String email,
+			String aadharCardNumber, String panCardNumber, String address) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.password = password;
+		this.mobileNumber = mobileNumber;
+		this.Email = email;
+		this.AadharCardNumber = aadharCardNumber;
+		this.panCardNumber = panCardNumber;
+		this.address = address;
+	}
+	
+	
+
+}

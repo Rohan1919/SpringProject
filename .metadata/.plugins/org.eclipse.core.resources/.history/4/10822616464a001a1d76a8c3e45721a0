@@ -1,0 +1,9 @@
+package com.lnt.test;
+
+public class TestSpring010 {
+	public static void main(String[] args) {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext();
+		
+	}
+
+}

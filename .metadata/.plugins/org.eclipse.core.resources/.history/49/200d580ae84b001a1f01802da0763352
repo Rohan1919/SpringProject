@@ -1,0 +1,29 @@
+package com.lnt.appl.tests;
+
+import java.util.ArrayList;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.lnt.appl.exceptions.HrException;
+import com.lnt.entities.Employee;
+import com.lnt.services.EmpServices;
+
+public class TestLayers {
+
+	public static void main(String[] args) {
+		
+		ConfigurableApplicationContext ctx=new ClassPathXmlApplicationContext("spring.xml");
+		EmpServices services=ctx.getBean("empService",EmpServices.class);
+		
+		try {
+		ArrayList<Employee> empList=services.getEmpList();
+		}
+		catch(HrException e) {
+		 e.printStackTrace();	
+		}
+		
+		ctx.close();
+	}
+
+}

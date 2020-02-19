@@ -1,0 +1,36 @@
+package com.lti.hr.web.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.lti.hr.core.entities.Department;
+import com.lti.hr.core.exception.HrException;
+import com.lti.hr.core.services.DeptService;
+
+@Controller
+public class HrController {
+	
+	private DeptService deptService=null;
+	@RequestMapping("menu.do")
+	public String getMainMenu() {
+		return "MainMenu";
+	}
+	
+	public ModelAndView getDeptList() {
+		ModelAndView mAV=new ModelAndView();
+		try {
+			ArrayList<Department> deptList=deptService.getDeptList();
+		} catch (HrException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		mAV.addObject(deptService);
+		mAV.setViewName("DeptList");
+		return mAV;
+		
+	}
+
+}

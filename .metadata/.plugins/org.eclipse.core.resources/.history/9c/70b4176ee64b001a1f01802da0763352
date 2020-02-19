@@ -1,0 +1,10 @@
+package com.lnt.services;
+
+import org.springframework.stereotype.Service;
+
+@Service("empService")
+public class EmpServicesImpl {
+	
+	
+
+}

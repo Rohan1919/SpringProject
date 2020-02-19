@@ -1,0 +1,23 @@
+package com.lnt.appl;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+
+@Component("dao1")
+public class EmpDaoImpl implements EmpDao {
+	
+	public EmpDaoImpl() {
+		System.out.println("object EmpDaoImpl created here.");
+	}
+	public ArrayList<String> getEmpList(){
+		ArrayList<String> empList=new ArrayList<>();
+		empList.add("Rohan");
+		empList.add("Ravan");
+		
+		return empList;
+	}
+
+}

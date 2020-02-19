@@ -1,0 +1,24 @@
+package com.lti.hr.core.daos;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.lti.hr.core.entities.Employee;
+import com.lti.hr.core.exceptions.HrException;
+
+public class EmpDaoImpl implements EmpDao {
+
+	@PersistenceContext
+	private EntityManager manager;
+
+	@Override
+	public ArrayList<Employee> getEmpList() throws HrException {
+		Query qry=manager.createQuery("FROM Employee");
+		ArrayList<Employee> empList=(ArrayList<Employee>qry.getResultList());
+		return null;
+	}
+
+}

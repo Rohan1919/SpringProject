@@ -1,0 +1,12 @@
+package com.lti.appl.daos;
+
+import java.util.ArrayList;
+
+import com.lnt.appl.exceptions.HrException;
+import com.lti.appl.entities.Employee;
+
+public interface EmpDao {
+	
+	public ArrayList<Employee> getEmpList() throws HrException;
+	
+}

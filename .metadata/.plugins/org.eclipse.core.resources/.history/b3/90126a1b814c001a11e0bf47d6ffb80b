@@ -1,0 +1,26 @@
+package com.lti.hr.services;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lti.hr.daos.DeptDao;
+
+import com.lti.hr.entities.Dept;
+
+import com.lti.hr.exceptions.HrException;
+
+@Service("empService")
+public class DeptServicesImpl implements EmpServices {
+	
+	@Autowired       //by type injection
+	private DeptDao dao;
+
+	@Override
+	public ArrayList<Dept> getEmpList() throws HrException {
+		
+		return dao.getDeptList();
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.lti.hr.web.controllers;
+
+public class HrController {
+	
+	public String getHomePage() {
+		
+		return "Home";
+		
+	}
+
+}

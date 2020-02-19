@@ -1,0 +1,15 @@
+package com.lti.hr.core.services;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.lti.hr.core.entities.Employee;
+
+
+public interface EmpServices {
+	
+	public ArrayList<Employee> getEmpList();
+	public boolean isAuthenticated(String userNm,String passWd);
+
+}

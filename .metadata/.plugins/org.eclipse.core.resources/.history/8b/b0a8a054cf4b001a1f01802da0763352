@@ -1,0 +1,10 @@
+package com.lnt.tests;
+
+public class testSpringLifecycle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

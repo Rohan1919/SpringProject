@@ -1,0 +1,16 @@
+package com.lti.hr.core.services;
+
+import java.util.ArrayList;
+
+public class EmpServicesImpl implements EmpServices {
+
+	@Override
+	public ArrayList<String> getEmpNamelist() {
+		ArrayList<String> empList=new ArrayList<>();
+		empList.add("Rohan");
+		empList.add("kk");
+		
+		return empList;
+	}
+
+}

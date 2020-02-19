@@ -1,0 +1,14 @@
+package com.lti.web.hr.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HrController {
+	
+	@RequestMapping(name="/hello")
+	public String getHomePage() {
+		return "/WEB-INF/jsps/Home.jsp";
+	}
+
+}

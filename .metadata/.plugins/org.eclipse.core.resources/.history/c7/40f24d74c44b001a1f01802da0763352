@@ -1,0 +1,20 @@
+package com.lnt.appl;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+/**
+ * if bean id is not mentioned,picks up Class name which converted to Camel Case and uses as id
+ * by default bean is Singleton. use @Scope to declare as prototype.
+ * 
+ */
+@Component
+//@Scope("prototype")
+@Scope("singleton")
+public class EmpDaoImpl {
+	
+	public EmpDaoImpl() {
+		System.out.println("object EmpDaoImpl created here.");
+	}
+
+}

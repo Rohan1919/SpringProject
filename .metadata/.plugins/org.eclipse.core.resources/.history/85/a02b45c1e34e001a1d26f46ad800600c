@@ -1,0 +1,10 @@
+package com.lti.hr.web;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HrRsController {
+	
+	private Dept
+
+}

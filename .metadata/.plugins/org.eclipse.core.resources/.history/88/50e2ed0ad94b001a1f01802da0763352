@@ -1,0 +1,23 @@
+package com.lnt.appl.daos;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Repository;
+
+import com.lnt.appl.exceptions.HrException;
+import com.lnt.entities.Employee;
+
+/**
+ * @Component:
+ *   @Repository:It represent DAO Classes
+ */
+@Repository("empDao")
+public class EmpDaoImpl implements EmpDao {
+
+	@Override
+	public ArrayList<Employee> getEmpList() throws HrException {
+		
+		return null;
+	}
+
+}

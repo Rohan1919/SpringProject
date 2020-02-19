@@ -1,0 +1,5 @@
+package com.lti.finance.core.exception;
+
+public class FinanceException extends Exception {
+
+}

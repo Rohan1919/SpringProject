@@ -1,0 +1,16 @@
+package com.lti.hr.core.daos;
+
+import java.util.ArrayList;
+
+import com.lti.hr.core.entities.Department;
+import com.lti.hr.core.exception.HrException;
+
+public class DeptDaoImpl implements DeptDao {
+
+	@Override
+	public ArrayList<Department> getDeptList() throws HrException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

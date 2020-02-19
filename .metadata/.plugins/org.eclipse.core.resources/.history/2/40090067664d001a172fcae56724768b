@@ -1,0 +1,42 @@
+package com.lti.hr.web.controllers;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class HrController {
+	
+	@RequestMapping("*.do")
+	public String getHomePage() {
+		return "Home";
+	}
+	
+	@RequestMapping("login.do")
+	public String getLoginPage() {
+		return "Login";
+	}
+	
+	/*
+	 * @RequestMapping("authenticate.do") public String
+	 * autheticateUser(HttpServletRequest req) { String
+	 * userNm=req.getParameter("userNm"); String
+	 * passWd=req.getParameter("password"); System.out.println(userNm+" "+passWd);
+	 * return "MainMenu";
+	 * 
+	 * }
+	 * 
+	 */	
+	@RequestMapping("authenticate.do")
+	public String autheticateUser(
+		@RequestParam("userNm") String userNm;
+		@RequestParam("passWd") String passWd;) {
+		System.out.println(userNm+" "+passWd);
+		return "MainMenu";
+		
+	}
+	
+
+}

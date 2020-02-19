@@ -1,0 +1,15 @@
+package com.lti.finance.core.exception;
+
+public class FinanceException extends Exception {
+
+	public FinanceException(String arg0, Throwable arg1) {
+		super(arg0, arg1);
+		
+	}
+
+	public FinanceException(String arg0) {
+		super(arg0);
+		
+	}
+
+}

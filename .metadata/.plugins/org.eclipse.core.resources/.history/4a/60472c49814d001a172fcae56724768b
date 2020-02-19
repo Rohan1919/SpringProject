@@ -1,0 +1,5 @@
+package com.lti.hr.core.exceptions;
+
+public class HrException {
+
+}

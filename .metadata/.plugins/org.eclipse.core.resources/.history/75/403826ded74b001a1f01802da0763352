@@ -1,0 +1,9 @@
+package com.lnt.appl.daos;
+
+import java.util.ArrayList;
+
+public interface EmpDao {
+	
+	public ArrayList<Employee> getEmpList() throws HrException
+
+}

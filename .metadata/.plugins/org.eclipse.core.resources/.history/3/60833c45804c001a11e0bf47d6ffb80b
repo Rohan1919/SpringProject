@@ -1,0 +1,11 @@
+package com.lti.hr.entities;
+
+public class Dept {
+	
+	private int dNo;
+	private String dName;
+	
+	public Dept() {
+	}
+
+}

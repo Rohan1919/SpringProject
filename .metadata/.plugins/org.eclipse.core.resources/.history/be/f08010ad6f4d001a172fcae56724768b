@@ -1,0 +1,28 @@
+package com.lti.hr.core.services;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmpServicesImpl implements EmpServices {
+
+	@Override
+	public ArrayList<String> getEmpNameList() {
+		ArrayList<String> empList=new ArrayList<>();
+		empList.add("Rohan");
+		empList.add("kk");
+		
+		return empList;
+	}
+
+	@Override
+	public boolean isAuthenticated(String userNm, String passWd) {
+		
+		if(userNm.contentEquals("aaa") && (passWd=="bbb")) 
+			return true;
+		else
+			return false;
+	}
+
+}

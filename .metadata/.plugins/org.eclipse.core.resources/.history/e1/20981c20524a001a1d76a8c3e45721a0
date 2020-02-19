@@ -1,0 +1,11 @@
+package com.lnt.appl;
+
+public class MyDao1 {
+	private String companyName;
+	
+	public MyDao1() {
+		System.out.println("object of MyDao1 created");
+	}
+	
+
+}
