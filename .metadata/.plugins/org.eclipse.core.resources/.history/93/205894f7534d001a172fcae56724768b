@@ -1,9 +1,0 @@
-package com.lti.hr.core.services;
-
-import java.util.ArrayList;
-
-public interface EmpServices {
-	
-	public ArrayList<String> getEmpNamelist();
-
-}

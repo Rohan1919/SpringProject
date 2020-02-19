@@ -1,9 +1,0 @@
-package com.lnt.appl;
-
-public class MyDao2 {
-	
-	public void printMessage() {
-		System.out.println("Good Afternoon.....");
-	}
-
-}

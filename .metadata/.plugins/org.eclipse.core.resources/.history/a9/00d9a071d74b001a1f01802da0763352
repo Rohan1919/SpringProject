@@ -1,5 +1,0 @@
-package com.lnt.appl.daos;
-
-public interface EmpDao {
-
-}
